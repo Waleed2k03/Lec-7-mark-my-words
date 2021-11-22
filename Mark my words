@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Enter the marks from 1 to 100 to see your grade\n";
+    double m;
+    cin >> m;
+    if (m >= 70)
+    {
+        cout << "You have secured A grade";
+    }
+    else if (m >= 60 && m <= 69)
+    {
+        cout << "you have secured B grade";
+    }
+    else if (m >= 50 && m <= 59)
+    {
+        cout << "you have secured C grade";
+    }
+    else if (m >= 40 && m <= 49)
+    {
+        cout << "you have secured D grade";
+    }
+    else if (m < 40 && m != 0)
+    {
+        cout << "you have failed";
+    }
+    else
+    {
+        cout << "wrong value";
+    }
+}
